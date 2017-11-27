@@ -16,6 +16,8 @@ app.listen(port, () => {
   });
 
 
+  //Get request
+
 app.get('/api/products',function(req,res,next){
     //res.send(JSON.stringify({"status":200,"name":"Bhaskar Majithia"}));
     pool.getConnection(function(err,getConnection){
